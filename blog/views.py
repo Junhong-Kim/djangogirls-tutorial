@@ -3,7 +3,9 @@ from django.shortcuts import render
 
 
 def post_list(request):
-    return HttpResponse('post_list')
+    # Template Loader
+    # blog/templates/blog/post_list.html
+    return render(request, 'blog/post_list.html')
 
 
 def post_detail(request, pk):
